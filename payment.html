@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment Page</title>
+	<link rel="stylesheet" type="text/css" href="pfa.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+		.large-container{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+			background: #dee5ee;
+			padding: 30px;
+			border-radius: 20px;
+			box-shadow: 0 0 10px; 
+		}
+		.col{
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		.row{
+			display: flex;
+			gap: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+		.row img{
+			width: 200px;
+			aspect-ratio: 1/.7;
+			cursor: pointer;
+		}
+		.img {
+			width: 200px;
+			aspect-ratio: 1/.7;
+			border-radius: 20px;
+			overflow: hidden;
+			border: 2px solid #030257;
+		}
+		.img img{
+			object-fit: cover;
+			cursor: pointer;
+
+		}
+		@media screen and (max-width: 600px) {
+			.row {
+				flex-direction: ;
+			}
+			.row img{
+				width: 50%;
+				aspect-ratio: ;
+			}
+			.img{
+				width: 50%;
+			}
+			.img img{
+				width: 100%;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<!-- THIS IS THE HOME PAGE OF THE WEBSITE INCLUDING THE NAVIGATION BAR AND THE HERO SECTION. -->
+	<section id="home">
+		 <i class="fa-solid fa-arrow-up" id="arrowUp"></i>
+		<nav>
+			<div id="logo">PFA</div>
+			<ul>
+				<li class="navli clicked"><a href="index.html">Home</a></li>
+				<li class="navli"><a href="index.html">Benefits</a></li>
+				<li class="navli"><a href="index.html">About</a></li>				
+				<li class="navli"><a href="testimonials.html">Testimonials</a></li>
+				<li class="navli"><a href="index.html">Contact</a></li>
+				<li class="navli"><a href="signinpage.html">Sign In</a></li>
+				<!-- <li><a href="enroll">Enroll Now</a></li> -->
+			</ul>
+			<i class="fas fa-bars"></i>
+		</nav>
+
+    <div class="large-container">
+		<div class="container">
+			<h2>Select a payment method</h2>
+			<div class="col">
+
+				<div class="row">
+					<div class="img"><img src="images/momo.jpg"></div>
+					<img src="images/vi.png">
+				</div>
+
+				<div class="row">					
+					<img src="images/mc.png">
+					<img src="images/pp.png">
+				</div>
+
+			</div>
+		</div>    	
+    </div>
+
+	<footer>
+		<div class="footer-rol">
+			<div id="logo">PFA</div>
+			<div class="useful-link">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#benefits">Benefits</a></li>
+				<li><a href="#about">About</a></li>				
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<!-- <li><a href="enroll">Enroll Now</a></li> -->
+			</ul>
+			</div>
+		</div>
+		<hr>
+    
+		<div class="footer-rol">
+			<p>Copy right <script>
+				const date = new Date()
+				document.write(date.getFullYear())
+			</script>.
+			 All rights reserved!</p>
+			<p style="color: #8a8a8a; font-size: 16px">Developer (+233509036914)</p>
+		</div>
+	</footer>
+
+    <script src="pfa.js"></script>
+</body>
+</html>

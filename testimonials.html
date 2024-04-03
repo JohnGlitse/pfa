@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Testimonials</title>
+	<link rel="stylesheet" type="text/css" href="pfa.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="fonts/Poppins-Thin.ttf">
+
+	<style type="text/css">
+
+/* DECLARING VARIABLE TO BE USED FOR A UNIQUE STYLING */
+/* DECLARING VARIABLE TO BE USED FOR A UNIQUE STYLING */
+/* DECLARING VARIABLE TO BE USED FOR A UNIQUE STYLING */
+:root{
+	--primary-color: #dee5ee;
+	--secondary-color: #f5f9ff;
+
+/*	--primary-color: #023e8a;
+	--secondary-color: #002366;*/
+	--accent-color: #00b4d8;
+
+	--dark-color:  #3B3A3A;
+	--text-color: #000;
+	--alternate-accent: #a3b18a; 
+
+    --section-padding: 80px 80px; 
+}
+.dark_theme{
+
+	--primary-color:   #001e2d;
+	--secondary-color: #000e17;
+	--accent-color: #ff7d00;
+
+	--alternate-accent: #003347;
+	--gradient-color: rgba(0, 0, 0, 0.8);
+	--text-color: #FFF;		 
+}
+.test-hero{
+	width: 100%;
+	height: 50vh;
+	padding: var(--section-padding);
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('images/image7.jpg') no-repeat center center/cover fixed;
+}
+.test-hero h1{
+	font-size: 45px;
+	color: #fff;
+}
+
+.testimonials{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding: var(--section-padding);
+	flex-direction: column;
+	gap: 40px;
+}	
+.row{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.row1{
+	display: flex;
+/*	flex-direction: column;*/
+	gap: 40px;
+}
+.test-img{
+	border-radius: 50px;
+	width: 96%;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border: solid 2px var(--accent-color);
+    gap: 20px;
+}
+
+.test-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.row2{
+	display: flex;
+	flex-direction: columnc;
+	gap: 20px;
+}
+.testimony{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background: var(--secondary-color);
+	padding: 40px;
+/*	border: 2px solid var(--accent-color);*/
+    box-shadow: inset 10px 10px 4px rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+}
+.testimony i{
+	color: var(--accent-color);
+}
+
+@media screen and (max-width: 600px) {
+	.testimonials{
+		flex-direction: column;
+		padding: 60px 20px;
+		gap: 40px;
+	}
+	.test-hero{
+		padding: 40px;
+		height: 40vh;
+		display: flex;
+		align-items: center;
+	}
+	.testimony{
+		padding: 20px;
+	}
+	.test-hero h1{
+		font-size: 35px;
+		color: #fff;
+	}
+	.row1{
+		align-items: center;
+	}
+}
+   
+   footer{
+   	background: var(--secondary-color);
+   }
+
+
+	</style>
+</head>
+<body>
+		<nav>
+			<div id="logo">PFA</div>
+			<ul>
+				<li class="navli"><a href="index.html">Home</a></li>
+				<li class="navli"><a href="index.html">Benefits</a></li>
+				<li class="navli"><a href="index.html">About</a></li>				
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li class="navli"><a href="index.html">Contact</a></li>
+				<li class="navli"><a href="signinpage.html">Sign In</a></li>
+				<!-- <li><a href="enroll">Enroll Now</a></li> -->
+			</ul>
+			<i class="fas fa-bars"></i>
+		</nav>
+		<div class="test-hero">
+			<h1>Testimonials</h1>
+		</div>
+		<div class="testimonials">
+				<h1>What People Say About Me</h1>
+			<!-- <div class="row row1">
+			
+				<div class="test-img">
+					<img src="images/image2.jpeg">
+				</div>
+			</div> -->
+			<div class="row row2">
+				<div class="testimony">
+					<i class="fa-solid fa-quote-left"></i>
+					<p>Hark the voice of Jesus calling who will come and work today. Fields are ripe and harvest waiting who will bear the sheaves away. Loud and longer the master calls rich rewards he offer free.</p>
+					<i class="fa-solid fa-quote-right"></i>
+					<h3>Mike Dane</h3>	
+				</div>
+
+				<div class="testimony">
+					<i class="fa-solid fa-quote-left"></i>
+					<p>Hark the voice of Jesus calling who will come and work today. Fields are ripe and harvest waiting who will bear the sheaves away. Loud and longer the master calls rich rewards he offer free.</p>
+					<i class="fa-solid fa-quote-right"></i>
+					<h3>Mitch Koko</h3>	
+				</div>
+
+				<div class="testimony">
+					<i class="fa-solid fa-quote-left"></i>
+					<p>Hark the voice of Jesus calling who will come and work today. Fields are ripe and harvest waiting who will bear the sheaves away. Loud and longer the master calls rich rewards he offer free.</p>
+					<i class="fa-solid fa-quote-right"></i>
+					<h3>Kyle</h3>	
+				</div>				
+
+			</div>
+		</div>
+
+	<footer>
+		<div class="footer-rol">
+			<div id="logo">PFA</div>
+			<div class="useful-link">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eindex.html">Benefits</a></li>
+				<li><a href="index.html">About</a></li>				
+				<li><a href="testimonial.html">Testimonials</a></li>
+				<li><a href="index.html">Contact</a></li>
+				<!-- <li><a href="enroll">Enroll Now</a></li> -->
+			</ul>
+			</div>
+		</div>
+		<hr>
+    
+		<div class="footer-rol">
+			<p>Copy right <script>
+				const date = new Date()
+				document.write(date.getFullYear())
+			</script>.
+			 All rights reserved!</p>
+			<p style="color: #8a8a8a; font-size: 16px">Developer (+233509036914)</p>
+		</div>
+	</footer>
+ <i class="fa-solid fa-arrow-up" id="arrowUp"></i>
+<script type="text/javascript" src="pfa.js"></script>	
+<style type="text/css">
+
+</style>	
+</body>
+</html>

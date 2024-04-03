@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="pfa.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/Poppins-Thin.ttf">
+
+	
+</head>
+<body>
+	<i class="fa-solid fa-arrow-up" id="arrowUp"></i>
+		<nav>
+			<div id="logo">PFA</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Benefits</a></li>
+				<li><a href="index.html">About</a></li>				
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="index.html">Contact</a></li>
+				<!-- <li><a href="signin">Sign In</a></li> -->
+				<!-- <li><a href="enroll">Enroll Now</a></li> -->
+			</ul>
+			<i class="fas fa-bars"></i>
+		</nav>	
+
+		<div class="test-hero">
+			<h1>Login/Register</h1>
+		</div>
+
+  <div class="signpage">
+  	     <div class="form">
+  	     	<div class="list-items">
+  	     		<button data-links='#login' class="active">Login</button>   		
+  	     		<button data-links='#register'>Register</button>   		
+  	     	</div>
+			<form id="login" data-contents class="active">
+				<input type="email" name="email" id="email" placeholder="Email">
+				<input type="password" name="password" id="password" placeholder="Password">
+				<input type="submit" name="submit" id="submit" placeholder="">
+			</form>
+
+			<form id="register" data-contents>
+				<input type="text" name="firstname" id="firstname" placeholder="Firstname">
+				<input type="text" name="lastname" id="lastname" placeholder="Lastname">
+				<input type="text" name="telephone" id="telephone" placeholder="Telephone">
+				<input type="email" name="email" id="email" placeholder="Email">
+				<input type="password" name="password" id="password" placeholder="Password">
+				<input type="submit" name="submit" id="submit">
+			</form>		  	     	
+  	     </div>
+  </div>
+
+
+	<footer>
+		<div class="footer-rol">
+			<div id="logo">PFA</div>
+			<div class="useful-link">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Benefits</a></li>
+				<li><a href="index.html">About</a></li>				
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="index.html">Contact</a></li>
+				<!-- <li><a href="enroll">Enroll Now</a></li> -->
+			</ul>
+			</div>
+		</div>
+		<hr>
+    
+		<div class="footer-rol">
+			<p>Copy right <script>
+				const date = new Date()
+				document.write(date.getFullYear())
+			</script>.
+			 All rights reserved!</p>
+			<p style="color: #8a8a8a; font-size: 16px">Developer (+233509036914)</p>
+		</div>
+	</footer>
+
+
+
+  <style type="text/css">
+
+/* DECLARING VARIABLE TO BE USED FOR A UNIQUE STYLING */
+/* DECLARING VARIABLE TO BE USED FOR A UNIQUE STYLING */
+:root{
+	--primary-color: #dee5ee;
+	--secondary-color: #f5f9ff;
+
+/*	--primary-color: #023e8a;
+	--secondary-color: #002366;*/
+	--accent-color: #00b4d8;
+
+	--dark-color:  #3B3A3A;
+	--text-color: #000;
+	--alternate-accent: #a3b18a; 
+
+    --section-padding: 80px 80px; 
+}
+.dark_theme{
+
+	--primary-color:   #001e2d;
+	--secondary-color: #000e17;
+	--accent-color: #ff7d00;
+
+	--alternate-accent: #003347;
+	--gradient-color: rgba(0, 0, 0, 0.8);
+	--text-color: #FFF;		 
+}
+
+
+body{background: var(--primary-color);}
+
+.test-hero{
+	width: 100%;
+	height: 40vh;
+	padding: var(--section-padding);
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('images/image9.jpg') no-repeat center center/cover fixed;
+	color: #fff;
+}
+.test-hero h1{
+	font-size: 45px;
+	color: #fff;
+}
+
+  	.signpage{
+	width: 100%;
+	height: 100%;
+	padding: var(--section-padding);
+	background: var(--primary-color);
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+  	}
+  	.form{
+  		display: flex;
+  		flex-direction: column;
+  		gap: 10px;
+  		width: 50%;
+  		justify-content: center;
+  		align-items: center;
+  		background: var(--secondary-color);
+  		padding: 30px;
+  		gap: 30px;
+  		border-radius: 20px;
+
+  	}
+  	form{
+  		display: flex;
+  		flex-direction: column;
+  		gap: 10px;
+  		width: 90%;
+  	}
+
+.list-items{
+  		display: flex;
+  		background: var(--secondary-color);
+  		padding: 10px;
+  		gap: 50px;
+  		border-radius: 30px;
+  	}
+  	[data-links]{
+  		background: var(--secondary-color);
+  		cursor: pointer;
+  	}
+  	.active[data-links]{
+  		background: var(--accent-color);
+  		color: var(--text-color);
+  		padding: 10px 20px;
+  		border-radius: 20px;
+  	}
+  	.list-items button{
+  		outline: none;
+  		border: none;
+  		font-size: 20px;
+  		background: var(--secondary-color);
+  		cursor: pointer;
+  		color: var(--text-color);
+  	}
+  	[data-contents]{
+  		display: none;
+  	}
+  	.active[data-contents]{
+  	   display: flex;
+  	}
+  	form input{
+  		height: 40px;
+  		border-radius: 30px;
+  		padding: 10px 15px;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  	}
+
+@media screen and (max-width: 600px) {
+	.signpage{
+		 padding: 40px 20px;
+	}
+	.form{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+
+		.test-hero{
+		padding: 0 20px;
+		height: 40vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.test-hero h1{
+		font-size: 35px;
+	}
+ 
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+ 
+	.form{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+	}
+	.signpage{
+  
+	}
+}
+
+   footer{
+   	background: var(--secondary-color);
+   }
+
+  </style>
+
+
+
+
+  <script type="text/javascript">
+  	const links = document.querySelectorAll('[data-links]')
+  	const contents = document.querySelectorAll('[data-contents]')
+
+  	links.forEach(link => {
+  	 link.addEventListener('click', () =>{
+  	 	const target = document.querySelector(link.dataset.links)
+        contents.forEach(content=>{
+        	content.classList.remove('active')
+        	links.forEach(link=>{
+        		link.classList.remove('active')
+        	})
+        })
+        link.classList.add('active')
+  	 	target.classList.add('active')
+  	 })
+  	})
+
+
+	// const logo = document.querySelector('#logo')
+	// const body = document.querySelector('body')
+	// logo.addEventListener('click', () => {
+	// 	body.classList.toggle('dark_theme')
+	// })
+
+
+  </script>
+  <script src="pfa.js"></script>
+</body>
+</html>
